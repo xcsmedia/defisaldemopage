@@ -15,7 +15,12 @@
 	align-items: center;
 }
 .logo-big {
-	width: 12rem;
+	text-transform: uppercase;
+	color: var(--blanco);
+	font-weight: 700;
+	letter-spacing: .2rem;
+	font-size: 1.4em;
+	text-decoration: none;
 }
 .menu ul {
 	display: flex;
@@ -133,11 +138,11 @@
 }
 .nav-bar {
 	width: 100%;
-	padding: 1rem;
+	padding: .5rem 2rem .5rem 2rem;
 	background: var(--bluedark);
 }
 .space-logo {
-	width: 5rem;
+	width: 3rem;
 }
 .ON {
 	width: 1.3rem;

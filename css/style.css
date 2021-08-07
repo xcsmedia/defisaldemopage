@@ -22,6 +22,27 @@ body {
 	position: relative;
 	overflow: hidden;
 }
+.custom-shape-divider-bottom-1628351826 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1628351826 svg {
+    position: relative;
+    display: block;
+    width: calc(105% + 1.3px);
+    height: 101px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1628351826 .shape-fill {
+    fill: #FFFFFF;
+}
 .content-1 {
 	width: 90%;
 	display: flex;
@@ -56,10 +77,8 @@ body {
 }
 .img-2 {
 	position: relative;
-	height: 300px;
-	width: 300px;
-	background: var(--bluelight);
-	border-radius: 50%;
+	height: 400px;
+	width: 30%;
 }
 
 
@@ -72,6 +91,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	background: var(--blanco);
+	overflow-x: hidden;
 }
 .content-2 {
 	height: 90%;
@@ -80,6 +100,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	overflow-x: hidden;
 }
 .tittle-2 {
 	height: 30vh;
@@ -88,11 +109,11 @@ body {
 	flex-direction: column-reverse;
 	justify-content: center;
 	align-items: center;
-	background: var(--bluelight);
-	overflow: hidden;
+	overflow-x: hidden;
+	color: var(--darkblue);
 }
 .tittle-2 h1 {
-	color: var(--bluedark);
+	color: var(--darkblue);
 	line-height: 2.5rem;
 	text-transform: uppercase;
 	margin: 0;
@@ -133,13 +154,12 @@ body {
 	display: flex;
 	width: 100%;
 	height: 70vh;
-	padding: 5% 0 5% 0;
-	background: var(--darkblue);
+	padding: 5% 0 10% 0;
 	justify-content: center;
 	align-items: center;
 	position: relative;
 	overflow: hidden;
-	color: var(--blanco);
+	color: var(--bluedark);
 }
 .buttons {
 	width: 60%;
@@ -157,7 +177,7 @@ body {
 	cursor: pointer;
 	width: 4rem;
 	height: 4rem;
-	background: blue;
+	filter: invert(100%);
 }
 .btn2 {
 	position: absolute;
@@ -167,7 +187,8 @@ body {
 	cursor: pointer;
 	width: 4rem;
 	height: 4rem;
-	background: red;
+	mask-size: cover;
+	filter: invert(100%);
 }
 .mision {
 	padding: 5%;
@@ -176,6 +197,7 @@ body {
 	transform: translateX(0%);
 	opacity: 1;
 	transition: all .5s ease;
+	background: var(--bluelight);
 }
 .mision li {
 	margin-top: 1rem;
@@ -193,6 +215,7 @@ body {
 	width: 40%;
 	opacity: 0;
 	transition: all .5s ease;
+	background: var(--bluelight);
 }
 .vision.active {
 	transition: all .5s ease;
@@ -206,18 +229,20 @@ body {
 
 /* Landing-3 */
 .landing-3 {
-	height: 100vh;
+	height: auto;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background: var(--darkblue);
+	padding: 3% 0 10% 0;
 }
 .content-3 {
 	width: 80%;
 	height: 90%;
 	display: flex;
 	flex-direction: column;
+	overflow-x: hidden;
 }
 .tittle-3 {
 	width: 100%;
@@ -265,9 +290,155 @@ body {
 	width: 48%;
 	background: var(--bluelight);
 	text-align: justify;
-	padding: 3%;
-	border-radius: 15px;	
+	padding: 3%;	
 }
+.box-2 {
+	padding: 3% 0 3% 0;
+	width: 100%;
+	height: auto;
+}
+.tittle-4 {
+	width: 100%;
+	background: var(--darkblue2);
+	text-align: center;
+	padding: 3%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 3%;
+	color: var(--blanco);
+	overflow: hidden;
+}
+.tittle-4 h1 {
+	margin: 0;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	line-height: 2.3rem;
+}
+.tittle-4 h1 span {
+	font-weight: 800;
+	color: var(--bluemate);
+}
+.tittle-4 h1 span {
+	animation: letter-animation1 7s infinite;
+}
+.tittle-4 h3 {
+	font-size: 1rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-top: 0.5rem;
+	text-align: center;
+}
+.event-box {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.ev-tx-1 {
+	width: 100%;
+	z-index: 3;
+}
+.event-1 {
+	width: 48%;
+	text-align: left;
+	padding: 3%;
+	height: 60vh;
+	justify-content: center;
+	display: flex;
+	align-items: flex-end;
+	background-image: url(../img/img-cena.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+}
+.event-1:before {
+	content: "";
+	background: var(--shadowtext);
+	height: 60vh;
+	width: 100%;
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.event-1 h2 {
+	background: var(--negro);
+	color: var(--blanco);
+	padding: .5rem;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	font-weight: 600;
+	letter-spacing: .05rem;
+}
+.event-1 a {
+	text-decoration: none;
+	font-size: 1rem;
+	color: var(--darkblue);
+	background: var(--bluelight);
+	font-weight: 600;
+	padding: .5rem;
+	text-transform: uppercase;
+}
+.event-1 a:hover {
+	transition: all .5s ease;
+	background: none;
+	color: var(--blanco);
+	box-shadow: inset 0 0 0 1px #fff;
+}
+.event-2 {
+	width: 48%;
+	background-image: url(../img/img-festival.jpg);
+	background-size: cover;
+	background-position: center;
+	text-align: left;
+	padding: 3%;
+	height: 60vh;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	position: relative;
+	overflow: hidden;
+}
+.event-2:before {
+	content: "";
+	background: var(--shadowtext);
+	height: 60vh;
+	width: 100%;
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.event-2 h2 {
+	background: var(--negro);
+	color: var(--blanco);
+	padding: .5rem;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	font-weight: 600;
+	letter-spacing: .05rem;
+}
+.event-2 a {
+	text-decoration: none;
+	font-size: 1rem;
+	color: var(--darkblue);
+	background: var(--bluelight);
+	font-weight: 600;
+	padding: .5rem;
+	text-transform: uppercase;
+}
+.event-2 a:hover {
+	transition: all .5s ease;
+	background: none;
+	color: var(--blanco);
+	box-shadow: inset 0 0 0 1px #fff;
+}
+
+
+
 
 
 
@@ -304,6 +475,13 @@ body {
 .img-2 {
 	display: none;
 }
+.custom-shape-divider-bottom-1628351826 svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 70px;
+    transform: rotateY(180deg);
+}
 
 /* Landing-2 */
 .landing-2 {
@@ -335,7 +513,7 @@ body {
 	content: "";
 	display: block;
 	height: 1.5px;
-	background: var(--bluedark);
+	background: var(--bluelight);
 	width: 100%;
 	margin: auto;
 	margin-top: .5rem;
@@ -361,6 +539,7 @@ body {
 	width: 100%;
 	overflow: hidden;
 	height: auto;
+	background: var(--bluelight);
 }
 .mision {
 	width: 100%;
@@ -408,6 +587,8 @@ body {
 	padding-left: 5%;
 	padding-right: 5%;
 	background: none;
+	padding-top: 10%;
+	margin: 0;
 }
 .tittle-3 h1 {
 	font-size: 1.5rem;
@@ -427,4 +608,69 @@ body {
 	padding-right: 5%;
 	width: 90%;
 	font-size: .9rem;
+}
+.tittle-4 {
+	background: none;
+}
+.tittle-4 {
+	padding-left: 5%;
+	padding-right: 5%;
+	background: none;
+	padding-top: 5%;
+	margin: 0;
+	padding-bottom: 5%;
+}
+.tittle-4 h1 {
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+}
+.tittle-4 h3 {
+	font-size: .9rem;
+}
+.event-box {
+	display: flex;
+	flex-direction: column;
+}
+.ev-tx-1 {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+}
+.event-1 {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	margin-bottom: 2rem;
+	padding: 5%;
+	padding-bottom: 10%;
+}
+.event-1 h2 {
+	text-align: left;
+	font-size: 1.5rem;
+	padding: .2rem;
+	margin-bottom: .5rem;
+}
+.event-1 a {
+	text-align: center;
+	margin-top: 0;
+	font-size: .5rem;
+}
+.event-2 {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	margin-bottom: 2rem;
+	padding: 5%;
+	padding-bottom: 10%;
+}
+.event-2 h2 {
+	text-align: left;
+	font-size: 1.2rem;
+	padding: .2rem;
+	margin-bottom: .5rem;
+}
+.event-2 a {
+	margin-top: 0;
+	font-size: .5rem;
+	text-align: center
 }
