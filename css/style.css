@@ -1,0 +1,430 @@
+/* Elements of all */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+}
+body {
+	font-family: 'Work Sans', sans-serif;
+}
+
+/*Landing 1 */
+.landing-1 {
+	background: var(--bluedark);
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+}
+.content-1 {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.text-1 {
+	width: 60%;
+	color: var(--bluelight);
+}
+.text-1 h1 {
+	font-size: 3.5rem;
+	margin: 0;
+}
+.text-1 p {
+	font-weight: 300;
+	width: 80%;
+	font-size: 1rem;
+	margin-bottom: 1.5rem;
+}
+.button-2 {
+	color: var(--negro);
+	padding: 0.8rem;
+	background: var(--blanco);
+	text-decoration: none;
+	border-radius: 20px;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+}
+.button-2 {
+	animation: button-animation1 8s infinite;
+}
+.img-2 {
+	position: relative;
+	height: 300px;
+	width: 300px;
+	background: var(--bluelight);
+	border-radius: 50%;
+}
+
+
+
+/* Landing-2 */
+.landing-2 {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--blanco);
+}
+.content-2 {
+	height: 90%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.tittle-2 {
+	height: 30vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+	background: var(--bluelight);
+	overflow: hidden;
+}
+.tittle-2 h1 {
+	color: var(--bluedark);
+	line-height: 2.5rem;
+	text-transform: uppercase;
+	margin: 0;
+	font-size: 2rem;
+	font-weight: 600;
+	text-align: center;
+}
+.tittle-2 h1 span {
+	font-size: 3rem;
+	color: var(--bluemate);
+	font-weight: 900;
+	letter-spacing: 0.1rem;
+}
+.tittle-2 h1 span:after {
+	content: "";
+	display: block;
+	height: 1.5px;
+	background: var(--bluedark);
+	width: 50%;
+	margin: auto;
+	margin-top: .5rem;
+}
+.tittle-2 h1 span:after {
+	animation: line-animation2 5s infinite;
+}
+.tittle-2 h1 span {
+	animation: letter-animation1 5s infinite;
+}
+.tittle-2 h3 {
+	width: 50%;
+	font-size: 1rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
+	text-align: center;
+}
+.text-2 {
+	display: flex;
+	width: 100%;
+	height: 70vh;
+	padding: 5% 0 5% 0;
+	background: var(--darkblue);
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	color: var(--blanco);
+}
+.buttons {
+	width: 60%;
+	height: 4rem;
+	display: flex;
+	align-items: center;	
+	position: relative;	
+}
+.btn1 {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 30;
+	cursor: pointer;
+	width: 4rem;
+	height: 4rem;
+	background: blue;
+}
+.btn2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 20;
+	cursor: pointer;
+	width: 4rem;
+	height: 4rem;
+	background: red;
+}
+.mision {
+	padding: 5%;
+	position: absolute;
+	width: 40%;
+	transform: translateX(0%);
+	opacity: 1;
+	transition: all .5s ease;
+}
+.mision li {
+	margin-top: 1rem;
+	list-style: disc;
+}
+.mision.active {
+	transition: all .5s ease;
+	opacity: 0;
+	transform: translateX(-100%);
+}
+.vision {
+	padding: 5%;
+	transform: translateX(100%);
+	position: absolute;
+	width: 40%;
+	opacity: 0;
+	transition: all .5s ease;
+}
+.vision.active {
+	transition: all .5s ease;
+	opacity: 1;
+	transform: translateX(0);
+}
+.vision p {
+	text-align: justify;
+}
+
+
+/* Landing-3 */
+.landing-3 {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--darkblue);
+}
+.content-3 {
+	width: 80%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+}
+.tittle-3 {
+	width: 100%;
+	background: var(--darkblue2);
+	text-align: center;
+	padding: 3%;
+	display: flex;
+	flex-direction: column-reverse;
+	margin-bottom: 3%;
+	color: var(--blanco);
+	overflow: hidden;
+}
+.tittle-3 h1 {
+	margin: 0;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	line-height: 2.3rem;
+}
+.tittle-3 h1 span {
+	font-weight: 800;
+	color: var(--bluemate);
+}
+.tittle-3 h1 span {
+	animation: letter-animation1 7s infinite;
+}
+.tittle-3 h3 {
+	font-size: 1rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
+	text-align: center;
+}
+.box-1 {
+	display: flex;
+	justify-content: space-between;
+}
+.text-3 {
+	width: 48%;
+	background: var(--darkblue2);
+	text-align: justify;
+	padding: 3%;
+	color: var(--blanco);
+}
+.text-4 {
+	width: 48%;
+	background: var(--bluelight);
+	text-align: justify;
+	padding: 3%;
+	border-radius: 15px;	
+}
+
+
+
+@media only screen and (max-width: 1080px) {
+
+/* Landing-1 */
+.landing-1 {
+	background: var(--bluedark);
+}
+
+.content-1 {
+	width: 90%;
+	height: 90%;
+	flex-direction: column;
+}
+.text-1 {
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.text-1 h1 {
+	margin-bottom: 0.5rem;
+	font-size: 2.5rem;
+	line-height: 2.5rem;
+}
+.text-1 p {
+	margin: auto;
+	font-size: 1rem;
+	text-align: center;
+	width: 90%;
+	margin-bottom: 1.5rem;
+}
+.img-2 {
+	display: none;
+}
+
+/* Landing-2 */
+.landing-2 {
+	height: auto;
+}
+.content-2 {
+	width: 100%;
+	flex-direction: column;
+}
+.tittle-2 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	padding: 10% 0 10% 0;
+}
+.tittle-2 h3 {
+	width: 80%;
+	text-align: center;
+}
+.tittle-2 h1 {
+	text-align: center;
+}
+.tittle-2 h1 span {
+	font-size: 3rem;
+}
+.tittle-2 h1 span:after {
+	content: "";
+	display: block;
+	height: 1.5px;
+	background: var(--bluedark);
+	width: 100%;
+	margin: auto;
+	margin-top: .5rem;
+}
+.tittle-2 h1 span:after {
+	animation: line-animation2 5s infinite;
+}
+.buttons {
+	width: 90%;
+	position: absolute;
+}
+.btn1 {
+	width: 1.5rem;
+	height: 2rem;
+}
+.btn2 {
+	width: 1.5rem;
+	height: 2rem;
+}
+.text-2 {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	overflow: hidden;
+	height: auto;
+}
+.mision {
+	width: 100%;
+	position: relative;
+	transform: translateX(0%);
+	padding: 5% 15% 5% 15%;
+}
+.mision h2 {
+	text-align: center;
+	font-size: 1.7rem;
+	text-transform: uppercase;
+}
+.mision li {
+	font-size: .9rem;
+	text-align: left;
+	list-style: disc;
+	margin-top: 1rem;
+}
+.vision {
+	width: 100%;
+	opacity: 0;
+	padding: 5% 15% 5% 15%;
+	position: absolute;
+	transform: translateX(100);
+}
+.vision h2 {
+	text-align: center;
+	font-size: 1.7rem;
+	text-transform: uppercase;
+}
+.vision p {
+	margin-top: 1rem;
+	font-size: .9rem;
+	text-align: justify;
+}
+/* Landing-3 */
+.landing-3 {
+	height: auto;
+	padding-bottom: 10%;
+}
+.content-3 {
+	width: 100%;
+}
+.tittle-3 {
+	padding-left: 5%;
+	padding-right: 5%;
+	background: none;
+}
+.tittle-3 h1 {
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+}
+.tittle-3 h3 {
+	font-size: .9rem;
+}
+.box-1 {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.text-3 {
+	background: none;
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 90%;
+	font-size: .9rem;
+}

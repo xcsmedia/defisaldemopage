@@ -1,0 +1,78 @@
+@keyframes button-animation1 {
+	0% {
+	background: none;
+	color: var(--blanco);
+	box-shadow: inset 0 0 0 1px #fff;
+	}
+	25% {
+	color: var(--negro);
+	background: var(--blanco);
+	}
+	50% {
+	color: var(--negro);
+	background: var(--blanco);
+	}
+	75% {
+	background: none;
+	color: var(--blanco);
+	box-shadow: inset 0 0 0 1px #fff;
+	}
+	100% {
+	background: none;
+	color: var(--blanco);
+	box-shadow: inset 0 0 0 1px #fff;
+	}
+}
+@keyframes line-animation1 {
+	0% {
+	width: 0%;
+	}
+	25% {
+	width: 20%;
+	}
+	50% {
+	width: 30%;
+	}
+	75% {
+	width: 50%;
+	}
+	100% {
+	opacity: 0;
+	width: 0%;
+	}
+}
+@keyframes line-animation2 {
+	0% {
+	width: 0%;
+	}
+	25% {
+	width: 40%;
+	}
+	50% {
+	width: 60%;
+	}
+	75% {
+	width: 100%;
+	}
+	100% {
+	opacity: 0;
+	width: 0%;
+	}
+}
+@keyframes letter-animation1 {
+	0% {
+	letter-spacing: 0;
+	}
+	25% {
+	letter-spacing: 1rem;
+	}
+	50% {
+	letter-spacing: 0.5rem;
+	}
+	75% {
+	letter-spacing: 0.2rem;
+	}
+	100% {
+	letter-spacing: 0;
+	}
+}
